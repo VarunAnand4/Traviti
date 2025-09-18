@@ -1,0 +1,28 @@
+.view-itinerary-container {
+  max-width: 600px;
+  margin: 2rem auto;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.view-itinerary-container h3 {
+  text-align: center;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.view-itinerary-container div {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.view-itinerary-container strong {
+  color: #333;
+}
+
+.view-itinerary-container ol {
+  padding-left: 1.5rem;
+  margin-top: 0.5rem;
+}

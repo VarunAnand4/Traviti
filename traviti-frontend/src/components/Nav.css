@@ -1,0 +1,35 @@
+.navbar {
+  background-color: rgba(255, 255, 255, 0.178);
+  border-bottom: 1px solid var(--border-color);
+  padding: 1rem;
+}
+
+.navbar .nav-links {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.navbar .nav-links a {
+  padding: 0.6rem 1rem;
+  border-radius: var(--btn-border-radius);
+  transition: background-color 0.3s;
+}
+
+.navbar .nav-links a:hover {
+  background-color: var(--primary-color);
+  color: rgba(255, 255, 255, 0.041);
+}
+
+.navbar .nav-links button {
+  padding: var(--btn-padding);
+  border: none;
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: var(--btn-border-radius);
+  transition: background-color 0.3s;
+}
+
+.navbar .nav-links button:hover {
+  background-color: var(--primary-hover);
+}

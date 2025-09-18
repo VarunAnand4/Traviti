@@ -1,0 +1,54 @@
+.create-itinerary-container {
+  max-width: 600px;
+  margin: 2rem auto;
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.create-itinerary-container h3,
+.create-itinerary-container h4 {
+  text-align: center;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.create-itinerary-container input,
+.create-itinerary-container select {
+  width: 100%;
+  padding: 0.6rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+}
+
+.create-itinerary-container button {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 4px;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+.create-itinerary-container button:hover {
+  background-color: var(--primary-hover);
+}
+
+.create-itinerary-container .stop-row {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 0.5rem;
+}
+
+.create-itinerary-container .stop-row input {
+  flex: 1;
+}
+
+.create-itinerary-container .stop-row button {
+  background-color: red;
+  padding: 0.4rem 0.8rem;
+}

@@ -1,0 +1,112 @@
+@import './variables.css';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  line-height: 1.5;
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+input, select, textarea, button {
+  font-family: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.card {
+  background-color: white;
+  border: 1px solid var(--border-color);
+  border-radius: var(--input-border-radius);
+  padding: var(--card-padding);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  margin-bottom: 1rem;
+}
+@media (max-width: 600px) {
+  .container {
+    padding: 0.5rem;
+  }
+  
+  .navbar .nav-links {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .form-card, .itinerary-card {
+    padding: 0.8rem;
+  }
+}
+
+/* global.css */
+
+/* Background image for the whole app container */
+body, #root {
+  margin: 0;
+  height: 100vh;
+  background-image: url('./assets/bg1.jpg'); /* put your image path here */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: Arial, sans-serif;
+}
+
+/* Container div inside App.jsx */
+.app-container {
+   /* white translucent background for readability */
+  background-color: rgba(75, 74, 74, 0.801); 
+  min-height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Welcome heading centered */
+.heading {
+  color: #ffffff;
+  text-align: center;
+  margin-top: 10vh;
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+/* Discover button style */
+.discover-btn {
+  display: block;
+  margin: 2rem auto 0;
+  padding: 12px 30px;
+  font-size: 1.2rem;
+  background-color: #2980b9;
+  border: none;
+  border-radius: 25px;
+  color: white;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  width: 200px;
+  transition: background-color 0.3s ease;
+}
+
+.discover-btn:hover {
+  background-color: #1c5980;
+}

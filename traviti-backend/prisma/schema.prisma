@@ -1,0 +1,31 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id          Int         @id @default(autoincrement())
+  name        String
+  email       String      @unique
+  password    String
+  itineraries Itinerary[]
+  createdAt   DateTime    @default(now())
+}
+
+model Itinerary {
+  id            Int      @id @default(autoincrement())
+  title         String
+  startLocation String
+  endLocation   String
+  stops         Json
+  modes         Json
+  totalDistance Float
+  totalDuration Int
+  createdBy     Int
+  user          User     @relation(fields: [createdBy], references: [id])
+  createdAt     DateTime @default(now())
+}
